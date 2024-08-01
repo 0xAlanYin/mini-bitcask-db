@@ -1,21 +1,10 @@
-# mini-bitcask-db
+package main
 
-A minimal project based on the bitcask storage model.
+import (
+	"fmt"
+	minibitcask "github.com/0xAlanYin/mini-bitcask-db"
+)
 
-## reference
-
-### bitcask model paper
-
-[https://riak.com/assets/bitcask-intro.pdf](https://riak.com/assets/bitcask-intro.pdf)
-
-### reference project
-
-[rosedb](https://github.com/roseduan/rosedb)
-
-
-## usage
-
-```go
 func main() {
 	// Open DB
 	db, err := minibitcask.Open("/tmp/minibitcask")
@@ -63,4 +52,3 @@ func main() {
 	}
 	fmt.Printf("Close db success\n")
 }
-```
